@@ -54,9 +54,9 @@ Installation
 
 Prerequisites
 ========================
-* pyDNMFk==1.0
+* pyDNMFk
 * conda
-* numpy>=1.2
+* numpy
 * matplotlib
 * MPI4py
 * scipy
@@ -76,7 +76,7 @@ Usage Example
                    [--precision PRECISION] [--err ERR] [--ranks RANKS [RANKS ...]]
                    [--save SAVE]
 
-    Arguments for pyNTNK
+    Arguments for pyDNTNK
 
     optional arguments:
       -h, --help            show this help message and exit

@@ -1,4 +1,4 @@
-# [pyDNTNK: Python Distributed Non Negative Tensor Networks](https://github.com/lanl/pyDNTNK)
+# [pyDNTNK: Python Distributed Non-Negative Tensor Networks](https://github.com/lanl/pyDNTNK)
 
 
 <div align="center", style="font-size: 50px">
@@ -81,7 +81,7 @@ mpirun -n <procs> python main.py usage: main.py [-h] [--p_grid P_GRID [P_GRID ..
                [--precision PRECISION] [--err ERR] [--ranks RANKS [RANKS ...]]
                [--save SAVE]
 
-Arguments for pyNTNK
+Arguments for pyDNTNK
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -111,7 +111,6 @@ We provide a sample dataset that can be used for estimation of k:
 ```python
 '''Imports block'''
 import os
-import sys
 os.environ["OMP_NUM_THREADS"] = "1"
 from pyDNTNK import pyDNTNK
 from pyDNTNK import *
