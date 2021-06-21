@@ -193,7 +193,17 @@ Yale Face         |  Video dataset | Synthetic data(500GB)
 ## Citation:
 
 ```latex
-@misc{rw2019timm,
+@misc{bhattaraipyDNTNK,
+  author = {Manish Bhattarai,Erik Skau,Phan Minh Duc Truong,Maksim Eren,Namita Kharat,Gopinath Chennupati,Raviteja Vangara,Hristo Djidjev,Boian ALexandrov},
+  title = {pyDNTNK: Python Distributed Non Negative Tensor Networks},
+  year = {2021},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  doi = {10.5281/zenodo.5004490},
+  howpublished = {\url{https://github.com/lanl/pyDNTNK}}
+}
+
+@misc{bhattaraipyDNMFk,
   author = {Manish Bhattarai,Ben Nebgen,Erik Skau,Maksim Eren,Gopinath Chennupati,Raviteja Vangara,Hristo Djidjev,John Patchett,Jim Ahrens,Boian ALexandrov},
   title = {pyDNMFk: Python Distributed Non Negative Matrix Factorization},
   year = {2021},
