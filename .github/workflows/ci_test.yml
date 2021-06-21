@@ -1,0 +1,44 @@
+name: CI
+on:
+  # Triggers the workflow on push or pull request events
+  pull_request:
+  push:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Tests Linux
+    runs-on: "ubuntu-latest"
+    defaults:
+      run:
+        shell: bash -l {0}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: conda-incubator/setup-miniconda@v2
+        with:
+          activate-environment: anaconda-client-env
+          python-version: 3.7.1
+          auto-activate-base: True
+      - name: Install Dependencies and pyNTNK
+        run: |
+          conda info
+          conda list
+          conda install mpi4py
+          python setup.py install
+          
+      - name: Test test_datagen 
+        run: |
+          cd tests && timeout --preserve-status 1m python -m pytest test_datagen.py
+          
+      - name: Test test_tk 
+        run: |
+          cd tests && timeout --preserve-status 1m mpirun -n 2 python -m pytest test_tk.py --with-mpi
+
+      - name: Test test_tt 
+        run: |
+          cd tests && timeout --preserve-status 1m mpirun -n 2 python -m pytest test_tt.py --with-mpi
+  
+        env:
+          OMPI_ALLOW_RUN_AS_ROOT: '1'
+          OMPI_ALLOW_RUN_AS_ROOT_CONFIRM: '1'
