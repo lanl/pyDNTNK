@@ -149,7 +149,7 @@ assert([i<1e-2 for i in tt.rel_error])
 
 Alternately, you can also run from test folder in command line as:
 ```bash
-mpirun -n 4 python main.py   --fpath='../data/array.zarr'  --model='tt' --routine='nmf' --p_grid=[2,1,1,1] --tt_ranks=[2,2,2,2]
+mpirun -n 2 python main.py   --fpath '../data/array.zarr'  --model 'tt' --routine 'nmf' --p_grid 2 1 1 1 --tt_ranks 2 2 2 2
 ```
 
 See the resources for more use cases.
