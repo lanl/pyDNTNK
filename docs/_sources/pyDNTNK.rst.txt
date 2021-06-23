@@ -36,6 +36,14 @@ pyDNTNK.tt\_utils module
    :undoc-members:
    :show-inheritance:
 
+pyDNTNK.version module
+----------------------
+
+.. automodule:: pyDNTNK.version
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

@@ -1,5 +1,5 @@
-pyNTNK
-======
+pyDNTNK
+=======
 
 .. toctree::
    :maxdepth: 4
