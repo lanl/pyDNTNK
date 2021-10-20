@@ -7,6 +7,9 @@
   [![DOI](https://zenodo.org/badge/378818934.svg)](https://zenodo.org/badge/latestdoi/378818934)
 
 </div>
+<p align="center">
+  <img width="160" height="200" src="docs/RD100.png">
+</p>
 
 <br>
 
